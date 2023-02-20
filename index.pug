@@ -1,0 +1,19 @@
+include ./pug/mixins
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="./app.css")
+    body 
+        .content 
+            .tour-list      
+              +tourItem("./img/anh1.png", "From$40", 4.8, 10, 1)
+              +tourItem("./img/anh2.avif", "From$60", 4.5, 8, 2)
+              +tourItem("./img/anh3.avif", "From$80", 4.7, 9, 3)

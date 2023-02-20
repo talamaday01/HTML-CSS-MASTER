@@ -1,0 +1,16 @@
+mixin tourItem(image, deal, review, reviewCount, duration)
+ .tour   
+    .tour-top
+        img.thumb(src=image, alt="")
+        span.from-deal= deal
+    .tour-body
+        h2.title  Bridge on the River Kwai and Thailands Burma Railway Tour
+        .rows
+            .review
+                img(src="./img/star.png", alt="")
+                span.rate-desc= review 
+                    |  (#{reviewCount} reviews)
+            .desc-time Duration: #{duration} hours
+        .cta    
+                a.btn(href="") Tours Price $61
+
