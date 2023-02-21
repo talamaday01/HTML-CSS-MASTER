@@ -1,6 +1,5 @@
 include ./pug/mixins
-//- Hello
-//- Hai an em
+//- Popular
 doctype html
 html(lang="en")
     head
@@ -13,8 +12,11 @@ html(lang="en")
         link(href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet")
         link(rel="stylesheet", href="./app.css")
     body 
-        .content 
-            .tour-list      
-              +tourItem("./img/anh1.png", "From$40", 4.8, 10, 1)
-              +tourItem("./img/anh2.avif", "From$60", 4.5, 8, 2)
-              +tourItem("./img/anh3.avif", "From$80", 4.7, 9, 3)
+       .content 
+            .popular-list
+                +tourPopular("./img/anh1.png", "The Grand Palace")
+                +tourPopular("./img/anh2.avif", "Chatuchak Weekend")
+                +tourPopular("./img/anh3.avif", "Wat Pho")
+                +tourPopular("./img/anh4.jpg", "Temple Of Dawn")
+                
+            

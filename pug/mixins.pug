@@ -14,3 +14,15 @@ mixin tourItem(image, deal, review, reviewCount, duration)
         .cta    
                 a.btn(href="") Tours Price $61
 
+mixin tourPopular(img, title)
+    .item 
+        .popular-top 
+            .popular-image
+            img.thumb(src=img , alt="")
+            span.btn Must see
+        .popular-body
+            p.desc Sep 28 10:00 AM - 1:00 PM
+            h2.title= title
+            p.review
+                img(src="./img/star.png", alt="") 
+                |  4.8 (12 reviews)
